@@ -22,6 +22,9 @@ jobs:
       - name: Update rubygems
         run: gem update --system
 
+      - name: Install dependencies
+        run: bundle install --jobs 4
+
       - name: Scan for common Rails security vulnerabilities using static analysis
         run: bin/brakeman --no-pager
 
@@ -41,6 +44,9 @@ jobs:
       - name: Update rubygems
         run: gem update --system
 
+      - name: Install dependencies
+        run: bundle install --jobs 4
+
       - name: Scan for security vulnerabilities in JavaScript dependencies
         run: bin/importmap audit
 
@@ -58,6 +64,9 @@ jobs:
 
       - name: Update rubygems
         run: gem update --system
+
+      - name: Install dependencies
+        run: bundle install --jobs 4
 
       - name: Lint code for consistent style
         run: bin/rubocop -f github
@@ -80,6 +89,9 @@ jobs:
 
       - name: Update rubygems
         run: gem update --system
+
+      - name: Install dependencies
+        run: bundle install --jobs 4
 
       - name: Run tests
         env:
