@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/faker-ruby/faker.git
-  revision: 46130d9212932c5ad3e5523413ef2189937f55af
+  revision: 7acfda66d1bbfc5c2e201acbd0071c357e588775
   branch: main
   specs:
     faker (3.5.1)
@@ -99,7 +99,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    concurrent-ruby (1.3.4)
+    concurrent-ruby (1.3.5)
     connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.4)
